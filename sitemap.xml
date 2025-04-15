@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://hoooo.org/search/index.html</loc>
+    
+    <lastmod>2025-04-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hoooo.org/404.html</loc>
+    
+    <lastmod>2023-04-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hoooo.org/about/index.html</loc>
+    
+    <lastmod>2020-02-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hoooo.org/tags/index.html</loc>
+    
+    <lastmod>2016-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hoooo.org/categories/index.html</loc>
+    
+    <lastmod>2016-03-16</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://hoooo.org/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
+  
+</urlset>
