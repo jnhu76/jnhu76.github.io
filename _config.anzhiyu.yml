@@ -22,7 +22,7 @@ menu:
 
 # nav相关配置
 nav:
-  enable: false
+  enable: true
   travelling: false
   clock: false
   menu:
@@ -31,11 +31,6 @@ nav:
         - name: 博客
           link: https://blog.hoooo.org
           icon: /img/favicon.ico
-    # - title: 项目
-    #   item:
-    #     - name: 安知鱼图床
-    #       link: https://image.anheyu.com/
-    #       icon: https://image.anheyu.com/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -46,7 +41,7 @@ mourn:
 # Code Blocks (代码相关)
 # --------------------------------------
 
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -71,7 +66,7 @@ social:
 
 # 作者卡片 状态
 author_status:
-  enable: treu
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
   statusImg: "https://img.hoooo.org/20250530222022738.gif"
   skills:
@@ -147,10 +142,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: "background: url('https://img.hoooo.org/20250530225104904.png') top / cover no-repeat"
+index_img: "background: url('https://img.hoooo.org/jijia.png') top / cover no-repeat"
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: true
 
 cover:
   # display the cover or not (是否显示文章封面)
