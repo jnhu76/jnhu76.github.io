@@ -1,11 +1,11 @@
-name: Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - master
+      - master  # 触发分支，根据实际修改
 
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -13,36 +13,42 @@ job:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: 'recursive'
+      
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      
       - name: Cache Npm dependencies
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-cache
+            ${{ runner.OS }}-npm-cache-
+      
       - name: Install dependencies
         run: npm install
+      
       - name: Build the site
-        run: npm run build
-      - name: Upload Pages artifact
+        run: npm run build  # 确保package.json中有build脚本
+      
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: './public'  # Hexo默认输出目录
+
   deploy:
-    needs: build
+    needs: build  # 依赖build任务
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-    
