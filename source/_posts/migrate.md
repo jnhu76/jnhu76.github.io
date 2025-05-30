@@ -12,11 +12,8 @@ katex: true
 ---
 
 
-更新博客主题和hexo的版本……
+更新博客主题和hexo的版本……!
 
-$$
-\begin{aligned}
-\sin^2 x+\cos^2 x &=1 \\
-\sin x\cos x &= \frac{1}{2}\sqrt{2}\sin(x+45^\circ)
-\end{aligned}
-$$
+![](https://img.hoooo.org/jijia.png)
+
+

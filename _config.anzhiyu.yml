@@ -140,8 +140,8 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://img.hoooo.org/touxiang.png
-  effect: false
+  img: https://img.hoooo.org/%E5%A4%B4%E5%83%8F.png
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
@@ -783,7 +783,7 @@ subtitle:
 
 # Loading Animation (加载动画)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -791,7 +791,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: https://img.hoooo.org/%E5%A4%B4%E5%83%8F.png # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
